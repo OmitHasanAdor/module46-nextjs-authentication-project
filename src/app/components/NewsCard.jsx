@@ -17,7 +17,7 @@ const NewsCard = ({newsByCategory}) => {
     return <div key={news._id} className=" p-3 rounded-md shadow-md ">
 <div className=" flex gap-5 justify-between items-center bg-gray-100 p-3">
 <div className=" flex items-center justify-start gap-3">
-        <div className=""><Image src={news.author?.img} alt={news.author.name} width={30} height={30} className=''></Image></div>
+        <div className=""><Image src={news.author?.img} alt={news.title} width={30} height={30} className=''></Image></div>
     <div>
         <h3 className=" font-bold text-lg">{news.author.name}</h3>
         <p className=" text-gray-600">{news.author.published_date}</p>
@@ -32,7 +32,7 @@ const NewsCard = ({newsByCategory}) => {
 <div className="">
     <h2 className=" font-bold text-2xl">{news.title}</h2>
     <Image src={news.image_url} alt={news.title} width={300} height={300} className=' w-full'></Image>
-    <p className=" text-gray-500">{news.description}</p>
+    <p className=" text-gray-500 line-clamp-3">{news.description}</p>
 </div>
 <div className="flex items-center justify-between py-3 gap-5 ">
   <div className="flex items-center gap-5 text-gray-500 ">
