@@ -4,9 +4,9 @@ import React from 'react';
 import { FaBookmark, FaEye, FaShareAlt, FaStar } from 'react-icons/fa';
 
 const NewsCard = ({newsByCategory}) => {
-    console.log(newsByCategory)
+    // console.log(newsByCategory)
   
-    console.log(newsByCategory)
+    // console.log(newsByCategory)
     return (
         <div className="bg-white p-4 col-span-2">
     <h2 className=" font-bold text-2xl">All News</h2>
